@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__top-row">
+          <a href="#!">
+            <img src="./img/header/logo.svg" alt="Simple logo" />
+          </a>
+          <div class="header__nav">
+            <nav class="nav">
+              <ul class="nav-list">
+                <li class="nav-item">
+                  <a href="#!" class="nav-link">Продукция</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#!" class="nav-link">Материалы</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#!" class="nav-link">О нас</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#!" class="nav-link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="forms">
+              <form role="search" class="forms__search" action="">
+                <button class="search-btn" type="submit"></button>
+                <input class="search" type="search" placeholder="Найти" />
+              </form>
+              <form action="" class="forms__login">
+                <button class="login-btn" type="submit"></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="hero__wrapper">
+            <div class="hero__text">
+              <h1 class="hero__title">
+                Простые вещи. <br />
+                Из бумаги
+              </h1>
+              <p class="hero__desc">
+                Бума́га (предположительно от итал. bombagia, первоисточником же
+                считается иранский) — волокнистый материал с минеральными
+                добавками.
+              </p>
+              <a href="#catalog" class="hero__link">Каталог</a>
+            </div>
+            <div class="hero__img">
+              <img src="./img/hero/hero.jpg" alt="Бумага в тубусе" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="info gray-bg">
+        <div class="container">
+          <div class="info__wrapper">
+            <div class="info__items">
+              <div class="info__item">
+                <div class="info__item-img">
+                  <img src="./img/info/v1.png" alt="V.1" />
+                </div>
+                <div class="info__item-desc">
+                  <h3>V.1</h3>
+                  <p>Результат вашего обучения</p>
+                </div>
+              </div>
+              <div class="info__item">
+                <div class="info__item-img">
+                  <img src="./img/info/v2.png" alt="V.2" />
+                </div>
+                <div class="info__item-desc">
+                  <h3>V.2</h3>
+                  <p>Результат вашего обучения</p>
+                </div>
+              </div>
+              <div class="info__item">
+                <div class="info__item-img">
+                  <img src="./img/info/v3.png" alt="V.3" />
+                </div>
+                <div class="info__item-desc">
+                  <h3>V.3</h3>
+                  <p>Результат вашего обучения</p>
+                </div>
+              </div>
+            </div>
+            <div class="info__main-item">
+              <img
+                src="./img/info/main.png"
+                alt="Открытая папка"
+                class="info__main-img"
+              />
+              <div class="info_main-desc">
+                <h2>Максимальная белизна</h2>
+                <p>
+                  Для повышения белизны, гладкости и мягкости в состав бумажной
+                  массы вводят белые минеральные вещества: мел, тальк, каолин и
+                  др. Эта операция называется наполнением.
+                </p>
+                <br />
+                <p>
+                  Отлив бумажного листа осуществляют на бумагоделательной
+                  машине, важнейшей частью которой является непрерывно
+                  движущаяся (как транспортер) металлическая или капроновая
+                  сетка.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="catalog" class="goods">
+        <h2 class="visually-hidden">Список товаров</h2>
+        <div class="container">
+          <div class="goods__list">
+            <div class="item-good">
+              <img
+                src="./img/goods/good-1.jpg"
+                alt="Упаковка"
+                class="good-img"
+              />
+              <h2 class="good-title">Упаковка</h2>
+              <p class="good-count">Тираж: от 50 штук</p>
+              <p class="good-desc">
+                Сделано из крафт-бумаги или плотного картона. Упаковки имеют
+                различные формы и расцветки, изготовим форму под заказ.
+              </p>
+              <a class="good-link" href="">Подробнее</a>
+            </div>
+            <div class="item-good">
+              <img src="./img/goods/good-2.jpg" alt="Пакеты" class="good-img" />
+              <h2 class="good-title">Пакеты</h2>
+              <p class="good-count">Тираж: от 200 штук</p>
+              <p class="good-desc">
+                С прямоугольным дном. От 10 см до 60 см по высоте. Материалы:
+                картон, крафт-бумага. Различные расцветки и дизайн.
+              </p>
+              <a class="good-link" href="">Подробнее</a>
+            </div>
+            <div class="item-good">
+              <img src="./img/goods/good-3.jpg" alt="Кейсы" class="good-img" />
+              <h2 class="good-title">Кейсы</h2>
+              <p class="good-count">Тираж: от 30 штук</p>
+              <p class="good-desc">
+                Подойдет для документов и других бумаг. Различные расцветки,
+                размеры и плотность. Материал: прессованная бумага.
+              </p>
+              <a class="good-link" href="">Подробнее</a>
+            </div>
+            <div class="item-good">
+              <img
+                src="./img/goods/good-4.jpg"
+                alt="Другие изделия "
+                class="good-img"
+              />
+              <h2 class="good-title">Другие изделия</h2>
+              <p class="good-count">Тираж: от 100 штук</p>
+              <p class="good-desc">
+                Нестандартные упаковки, кейсы и другие изделия различных
+                размеров и конфигураций. Изготовим в кратчайшие сроки.
+              </p>
+              <a class="good-link" href="">Подробнее</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="clients gray-bg">
+        <h2 class="visually-hidden">Клиенты</h2>
+        <div class="container">
+          <ul class="clients-list">
+            <li class="client-item">
+              <img
+                src="./img/clients/logo-1.png"
+                alt="Клиент 1"
+                class="client-img client-img--center"
+              />
+            </li>
+            <li class="client-item">
+              <img
+                src="./img/clients/logo-2.png"
+                alt="Клиент 2"
+                class="client-img"
+              />
+            </li>
+            <li class="client-item">
+              <img
+                src="./img/clients/logo-3.png"
+                alt="Клиент 3"
+                class="client-img"
+              />
+            </li>
+            <li class="client-item">
+              <img
+                src="./img/clients/logo-4.png"
+                alt="Клиент 4"
+                class="client-img"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="advertising">
+        <div class="container">
+            <div class="advertising__wrapper">
+                <div class="advertising__text">
+                  <h1 class="advertising__title">
+                    Simple скетчбук
+                  </h1>
+                  <p class="advertising__desc">
+                    80 листов, твердая обложка, бумага  Fabriano 200 г/м2. Подойдет и для графики и для акварели. Для самых смелых творческих замыслов!
+                  </p>
+                  <a href="#!" class="advertising__link">Купить</a>
+                </div>
+                <div class="advertising__img">
+                  <img src="./img/advertising/scetchbook.png" alt="Simple скетчбук" />
+                </div>
+              </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top-row">
+                <a href="#!">
+                    <img src="./img/footer/logo.svg" alt="Simple logo" />
+                </a>
+                <ul class="socials-list">
+                    <li class="social-item"><a href="#!" class="social-link"><img src="./img/footer/icons/facebook.svg" alt="Facebook"></a></li>
+                    <li class="social-item"><a href="#!" class="social-link"><img src="./img/footer/icons/twitter.svg" alt="Twitter"></a></li>
+                    <li class="social-item"><a href="#!" class="social-link"><img src="./img/footer/icons/instagram.svg" alt="Instagram"></a></li>
+                    <li class="social-item"><a href="#!" class="social-link"><img src="./img/footer/icons/youtube.svg" alt="Youtube"></a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright">Simple <span>®</span> 2021</p>
+    </footer>
+  </body>
+</html>

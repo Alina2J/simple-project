@@ -1,0 +1,48 @@
+.footer {
+  background-color: $dark-gray;
+  padding-top: 28px;
+}
+.footer__top-row {
+  display: flex;
+  justify-content: space-between;
+}
+.socials-list {
+  display: flex;
+  gap: 30px;
+  padding-bottom: 28px;
+}
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+
+  &:hover {
+    filter: brightness(0) saturate(100%) invert(87%) sepia(10%) saturate(1268%)
+    hue-rotate(198deg) brightness(101%) contrast(97%);
+    background-color: transparent;
+  }
+
+  &:focus {
+    background-color: $light-blue;
+    border-radius: 2px;
+  }
+
+  &:active {
+    filter: brightness(0) saturate(100%) invert(40%) sepia(100%) saturate(391%) hue-rotate(202deg) brightness(103%) contrast(103%);
+    background-color: transparent;
+  }
+}
+
+.copyright {
+  display: block;
+  text-align: center;
+  background-color: $white;
+  padding: 3px 0;
+  color: $dark-gray;
+  font-size: 13px;
+
+  span {
+    color: $copyright;
+  }
+}

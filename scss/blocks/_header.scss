@@ -1,0 +1,10 @@
+.header {
+    padding: 28px 0;
+    border-bottom: $header-border solid 1px;
+}
+
+.header__top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

@@ -1,0 +1,91 @@
+.header__nav {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.nav-link {
+    font-size: 20px;
+    color: $dark-gray;
+    padding: 0 5px;
+    transition: all 0.1s ease-in;
+
+    &:hover {
+        color: $light-blue;
+    }
+
+    &:focus {
+        color: $dark-gray;
+        background-color: $link-focus;
+    }
+
+    &:active {
+        color: $link-active;
+        background-color: transparent;
+    }
+}
+
+
+.forms {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.forms__search {
+    height: 26px;
+    position: relative;
+    max-width: 257px;
+}
+.search {
+    position: absolute;
+    height: 100%;
+    width: 0;
+}
+
+.search-btn{
+    background: url('../img/header/icons/search/default.svg') no-repeat center;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    transition: all 0.1s ease-in;
+
+    &:hover {
+        background: url('../img/header/icons/search//hover.svg') no-repeat center;
+    }
+
+    &:focus {
+        background: url('../img/header/icons/search//hover.svg') no-repeat center;
+        background-color: $link-focus;
+    }
+
+    &:active {
+        background: url('../img/header/icons/search//active.svg') no-repeat center;
+    }
+}
+
+.login-btn {
+    background: url('../img/header/icons/log-in/default.svg') no-repeat center;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    transition: all 0.1s ease-in;
+
+    &:hover {
+        background: url('../img/header/icons/log-in/hover.svg') no-repeat center;
+    }
+
+    &:focus {
+        background: url('../img/header/icons/log-in/hover.svg') no-repeat center;
+        background-color: $link-focus;
+    }
+
+    &:active {
+        background: url('../img/header/icons/log-in/active.svg') no-repeat center;
+    }
+}
