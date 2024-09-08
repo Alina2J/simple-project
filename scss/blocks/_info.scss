@@ -1,11 +1,23 @@
 .info {
     padding: 90px 0;
+
+    @include mediaTabletLarge {
+        padding: 60px 0;
+    }
 }
 
 .info__wrapper {
     display: flex;
     flex-direction: column;
     gap: 90px;
+
+    @include mediaTabletLarge {
+        gap: 40px;
+    }
+
+    @include mediaPhoneLarge {
+        gap: 60px;
+    }
 }
 
 .info__items {
@@ -20,6 +32,14 @@
         gap: 30px;
         border-top: $item-border solid 1px;
         padding-top: 19px;
+
+        @include mediaTabletLarge {
+            flex-direction: column;
+        }
+
+        @include mediaPhoneLarge {
+            flex-direction: row;
+        }
     }
 
     .info__item-desc {
@@ -28,13 +48,27 @@
             font-size: 18px;
             font-weight: 500;
             color: $accent-gray;
+            @include mediaTabletSmall {
+                font-size: 16px;
+            }
         }
 
         p {
             line-height: 1.5;
             max-width: 160px;
+            @include mediaTabletSmall {
+                font-size: 16px;
+            }
         }
+
+
     }
+
+    @include mediaPhoneLarge {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
 }
 
 .info__item-img {
@@ -51,11 +85,22 @@
     justify-content: space-between;
 
     img {
+        
         transition: all 500ms cubic-bezier(0.000, 1.650, 0.480, 1.055);
 
         &:hover {
             transform: scale(1.2);
         }
+
+        @include mediaTabletLarge {
+            max-width: 100%;
+        }
+
+        @include mediaTabletSmall {
+            margin-bottom: 20px;
+        }
+        
+
     }
 
     .info_main-desc {
@@ -65,11 +110,45 @@
             line-height: 1;
             margin-bottom: 20px;
             color: $accent-gray;
+
+            @include mediaTabletLarge {
+                font-size: 30px;
+                margin-bottom: 14px;
+            }
+
+            @include mediaTabletSmall {
+                font-size: 24px;
+            }
         }
 
         p {
             line-height: 1.7;
             max-width: 350px;
+
+            @include mediaTabletSmall {
+                max-width: 100%;
+            }
+
+            @include mediaTabletSmall {
+                font-size: 16px;
+            }
         }
+
+        @include mediaTabletLarge {
+            max-width: 330px;
+        }
+
+        @include mediaTabletSmall {
+            max-width: 100%;
+        }
+
+    }
+
+    @include mediaTabletLarge {
+        align-items: flex-start;
+    }
+
+    @include mediaTabletSmall {
+        flex-direction: column;
     }
 }

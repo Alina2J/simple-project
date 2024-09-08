@@ -13,32 +13,33 @@
           <a href="#!">
             <img src="./img/header/logo.svg" alt="Simple logo" />
           </a>
-          <div class="header__nav">
-            <nav class="nav">
-              <ul class="nav-list">
-                <li class="nav-item">
-                  <a href="#!" class="nav-link">Продукция</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#!" class="nav-link">Материалы</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#!" class="nav-link">О нас</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#!" class="nav-link">Контакты</a>
-                </li>
-              </ul>
-            </nav>
-            <div class="forms">
-              <form role="search" class="forms__search" action="">
-                <button class="search-btn" type="submit"></button>
-                <input class="search" type="search" placeholder="Найти" />
-              </form>
-              <form action="" class="forms__login">
-                <button class="login-btn" type="submit"></button>
-              </form>
-            </div>
+          <nav class="nav">
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a href="#!" class="nav-link">Продукция</a>
+              </li>
+              <li class="nav-item">
+                <a href="#!" class="nav-link">Материалы</a>
+              </li>
+              <li class="nav-item">
+                <a href="#!" class="nav-link">О нас</a>
+              </li>
+              <li class="nav-item">
+                <a href="#!" class="nav-link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="nav-btn">
+            <button class="nav-icon-btn"></button>
+          </div>
+          <div class="forms">
+            <form role="search" class="forms__search" action="">
+              <button class="search-btn" type="button"></button>
+              <input class="search" type="search" placeholder="Найти"/>
+            </form>
+            <form action="" class="forms__login">
+              <button class="login-btn" type="submit"></button>
+            </form>
           </div>
         </div>
       </div>
@@ -98,11 +99,13 @@
               </div>
             </div>
             <div class="info__main-item">
-              <img
-                src="./img/info/main.png"
-                alt="Открытая папка"
-                class="info__main-img"
-              />
+              <div class="main-item-img">
+                <img
+                  src="./img/info/main.png"
+                  alt="Открытая папка"
+                  class="info__main-img"
+                />
+              </div>
               <div class="info_main-desc">
                 <h2>Максимальная белизна</h2>
                 <p>
@@ -214,38 +217,59 @@
       </section>
       <section class="advertising">
         <div class="container">
-            <div class="advertising__wrapper">
-                <div class="advertising__text">
-                  <h1 class="advertising__title">
-                    Simple скетчбук
-                  </h1>
-                  <p class="advertising__desc">
-                    80 листов, твердая обложка, бумага  Fabriano 200 г/м2. Подойдет и для графики и для акварели. Для самых смелых творческих замыслов!
-                  </p>
-                  <a href="#!" class="advertising__link">Купить</a>
-                </div>
-                <div class="advertising__img">
-                  <img src="./img/advertising/scetchbook.png" alt="Simple скетчбук" />
-                </div>
-              </div>
+          <div class="advertising__wrapper">
+            <div class="advertising__text">
+              <h1 class="advertising__title">Simple скетчбук</h1>
+              <p class="advertising__desc">
+                80 листов, твердая обложка, бумага Fabriano 200 г/м2. Подойдет и
+                для графики и для акварели. Для самых смелых творческих
+                замыслов!
+              </p>
+              <a href="#!" class="advertising__link">Купить</a>
+            </div>
+            <div class="advertising__img">
+              <img
+                src="./img/advertising/scetchbook.png"
+                alt="Simple скетчбук"
+              />
+            </div>
+          </div>
         </div>
       </section>
     </main>
     <footer class="footer">
-        <div class="container">
-            <div class="footer__top-row">
-                <a href="#!">
-                    <img src="./img/footer/logo.svg" alt="Simple logo" />
-                </a>
-                <ul class="socials-list">
-                    <li class="social-item"><a href="#!" class="social-link"><img src="./img/footer/icons/facebook.svg" alt="Facebook"></a></li>
-                    <li class="social-item"><a href="#!" class="social-link"><img src="./img/footer/icons/twitter.svg" alt="Twitter"></a></li>
-                    <li class="social-item"><a href="#!" class="social-link"><img src="./img/footer/icons/instagram.svg" alt="Instagram"></a></li>
-                    <li class="social-item"><a href="#!" class="social-link"><img src="./img/footer/icons/youtube.svg" alt="Youtube"></a></li>
-                </ul>
-            </div>
+      <div class="container">
+        <div class="footer__top-row">
+          <a href="#!">
+            <img src="./img/footer/logo.svg" alt="Simple logo" />
+          </a>
+          <ul class="socials-list">
+            <li class="social-item">
+              <a href="#!" class="social-link"
+                ><img src="./img/footer/icons/facebook.svg" alt="Facebook"
+              /></a>
+            </li>
+            <li class="social-item">
+              <a href="#!" class="social-link"
+                ><img src="./img/footer/icons/twitter.svg" alt="Twitter"
+              /></a>
+            </li>
+            <li class="social-item">
+              <a href="#!" class="social-link"
+                ><img src="./img/footer/icons/instagram.svg" alt="Instagram"
+              /></a>
+            </li>
+            <li class="social-item">
+              <a href="#!" class="social-link"
+                ><img src="./img/footer/icons/youtube.svg" alt="Youtube"
+              /></a>
+            </li>
+          </ul>
         </div>
-        <p class="copyright">Simple <span>®</span> 2021</p>
+      </div>
+      <p class="copyright">Simple <span>®</span> 2021</p>
     </footer>
+
+    <script src="./js/main.js"></script>
   </body>
 </html>

@@ -15,6 +15,18 @@ body {
     margin: 0 auto;
     padding: 0 15px;
     max-width: 1140px;
+
+    @include mediaTabletLarge {
+        padding: 0 39px;
+    }
+
+    @include mediaTabletSmall {
+        padding: 0 32px;
+    }
+
+    @include mediaPhoneLarge {
+        padding: 0 15px;
+    }
 }
 
 .visually-hidden {
@@ -34,4 +46,30 @@ body {
 
 .gray-bg {
     background-color: $block-gray-bg;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50em;
+    background: url('../img/header/icons/search/escape.svg') no-repeat 50% 50%;
+    background-size: contain;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  input[type="search"]:focus::-webkit-search-cancel-button {
+    opacity: 1;
+    pointer-events: all;
+  }
+  
+
+
+.none {
+    display: none;
+}
+
+.no-scroll {
+    overflow: hidden;
 }

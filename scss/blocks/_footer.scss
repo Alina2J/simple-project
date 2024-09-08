@@ -1,15 +1,46 @@
 .footer {
   background-color: $dark-gray;
   padding-top: 28px;
+
+  @include mediaPhoneLarge {
+      padding-top: 20px;
+  }
 }
 .footer__top-row {
   display: flex;
   justify-content: space-between;
+
+  @include mediaPhoneLarge {
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 40%;
+        transform: translateY(-40%);
+        width: 100%;
+        border-top: $header-border solid 1px;
+        opacity: 0.2;
+      }
+
+      & a {
+        padding-bottom: 20px;
+      }
+  }
 }
 .socials-list {
   display: flex;
   gap: 30px;
   padding-bottom: 28px;
+
+  @include mediaPhoneLarge {
+      padding: 20px 0;
+      & a {
+        padding: 0;
+      }
+  }
 }
 .social-link {
     display: flex;
@@ -37,6 +68,7 @@
 .copyright {
   display: block;
   text-align: center;
+  text-transform: uppercase;
   background-color: $white;
   padding: 3px 0;
   color: $dark-gray;

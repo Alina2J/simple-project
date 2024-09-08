@@ -1,10 +1,40 @@
 .header {
+    overflow: hidden;
     padding: 28px 0;
     border-bottom: $header-border solid 1px;
+
+    @include mediaTabletLarge {
+        padding-top: 11px;
+        padding-bottom: 20px;
+    }
+
+    @include mediaTabletSmall {
+        padding-bottom: 18px;
+    }
+
+    @include mediaPhoneLarge {
+        padding-bottom: 15px;
+    }
 }
 
 .header__top-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include mediaTabletLarge {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    @include mediaPhoneLarge {
+        & a {
+            grid-column: 1 / -1;
+            justify-self: center;
+            align-self: center;
+            position: relative;
+            padding-bottom: 11px;
+        }
+    }
 }

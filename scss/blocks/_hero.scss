@@ -1,16 +1,38 @@
 .hero {
-    padding-top: 60px;
-    height: 620px;
+    padding: 130px 0;
+    max-height: 620px;
     overflow: hidden;
+
+    @include mediaTabletLarge {
+        max-height: 470px;
+        padding: 65px 0;
+    }
+
+    @include mediaTabletSmall {
+        padding: 60px 0;
+    }
+
+    @include mediaPhoneLarge {
+        padding: 49px 0;
+    }
 }
 
 .hero__wrapper {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: minmax(250px, 445px) minmax(180px, 540px);
+    gap: 125px;
+
+    @include mediaTabletLarge {
+        gap: 30px;
+        align-items: flex-start;
+    }
+
+    @include mediaPhoneLarge {
+        grid-template-columns: 1fr;
+    }
 }
 
 .hero__text {
-    margin-top: 70px;
 
     .hero__title {
         font-size: 60px;
@@ -18,6 +40,7 @@
         margin-bottom: 30px;
         color: $dark-gray;
     }
+
     .hero__desc {
         line-height: 1.5;
         max-width: 445px;
@@ -51,6 +74,60 @@
             color: $white;
         }
     }
+
+    @include mediaTabletLarge {
+        margin: 0;
+
+        .hero__title {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        .hero__desc {
+            max-width: 390px;
+        }
+    }
+
+    @include mediaTabletSmall {
+        margin: 0;
+        max-width: 287px;
+
+        .hero__title {
+            font-size: 38px;
+        }
+
+        .hero__desc {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .hero__link {
+            max-width: 196px;
+            height: 60px;
+            font-size: 18px;
+        }
+    }
+
+    @include mediaPhoneLarge {
+        grid-column: 1 / -1;
+        max-width: 100%;
+
+        .hero__title {
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        .hero__desc {
+            font-size: 14px;
+            margin-bottom: 20px;
+            max-width: 100%;
+        }
+
+        .hero__link {
+            max-width: 144px;
+            height: 50px;
+        }
+    }
 }
 
 
@@ -61,10 +138,15 @@
     img {
         position: absolute;
         right: 0;
+        top: -20%;
     }
 
     &:hover {
         transform: translateY(-10%);
+    }
+
+    @include mediaPhoneLarge {
+        display: none;
     }
 }
 
